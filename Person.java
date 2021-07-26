@@ -18,7 +18,13 @@ public class Person {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getFirstName() {
+    @Override
+	public String toString() {
+		return "Person details are :-"+'\n'+"FirstName: " + firstName +'\n'+ "LastName: " + lastName +'\n'+ "Address: " + address +'\n'+ "City: " + city+'\n'
+				+ "State: " + state+'\n'+ "Email: " + email +'\n'+ "Zip: " + zip +'\n'+ "PhoneNumber: " + phoneNumber +'\n' ;
+	}
+
+	public String getFirstName() {
         return firstName;
     }
 
